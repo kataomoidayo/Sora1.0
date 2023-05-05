@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DetailStoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/photo"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/name"
+            tools:text="@string/name"
+            android:layout_below="@id/iv_photo"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/description"
+            tools:text="@string/description"
+            android:layout_below="@id/tv_name"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/date"
+            tools:text="@string/created_date"
+            android:layout_below="@id/tv_description"/>
+
+    </RelativeLayout>
+
+</ScrollView>
